@@ -12,7 +12,7 @@
     padding: 6px 25px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 16px;
     line-height: 1.2;
     color: #404040;
     border: 1px solid #404040;
@@ -26,4 +26,10 @@
 .header__logo:hover {
     border-color: #43A2F0;
     color: #43A2F0;
+}
+
+@media only screen and (min-width: 768px) {
+    .header__logo {
+        font-size: 16px;
+    }
 }

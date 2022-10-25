@@ -8,7 +8,7 @@
 }
 
 .carousel-card__title {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 1.2;
     color: #000000;
 }
@@ -16,7 +16,25 @@
 .carousel-card__content {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.2;
     color: #000000;
+}
+
+@media only screen and (min-width: 768px)  {
+    .carousel-card__title {
+        font-size: 22px;
+    }
+    .carousel-card__content {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .carousel-card__title {
+        font-size: 28px;
+    }
+    .carousel-card__content {
+        font-size: 22px;
+    }
 }
