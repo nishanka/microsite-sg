@@ -1,0 +1,129 @@
+.carousel-slide {
+    position: relative;
+    padding: 50px 30px 0;
+}
+
+.carousel-slide__link {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 9999;
+}
+
+.carousel-slide__link a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #a6a6a6;
+    transition: all 0.5s ease;
+}
+
+.carousel-slide__link a:hover {
+    color: #43A2F0;
+}
+
+.carousel-slide__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.carousel-slide__container {
+    height: 100vh;
+    width: 100vw;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-slide__carousel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 300px;
+}
+
+.carousel-slide__carousel .slick-slider {
+    position: relative;
+    width: 80%;
+}
+
+.carousel-slide__carousel .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.carousel-slide__carousel .slick-arrow.slick-disabled {
+    display: block!important;
+    opacity: 0.2;
+    cursor: default;
+}
+
+.carousel-slide__carousel .slick-prev {
+    left: -25px;
+    right: auto;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.carousel-slide__carousel .slick-next {
+    right: -86px;
+    left: auto;
+    transform: translateX(-50%) rotate(270deg);
+}
+
+.carousel-slide__title {
+    text-align: center;
+    color: #d9d9d9;
+    text-transform: uppercase;
+}
+
+.carousel-slide__content {
+    position: relative;
+    width: 100vw;
+}
+
+.carousel-slide__content .slick-slide {
+    margin: 0 5px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px 0;
+}
+
+.carousel-slide__content .slick-list {
+    overflow: hidden;
+}
+
+.carousel-slide__content .slick-track {
+    display: flex;;
+}
+
+@media only screen and (min-width: 480px) {
+    .carousel-slide__title {
+        margin-right: 100px;
+        text-align: right;
+    }
+    
+    .carousel-slide__carousel {
+        align-items: flex-end;
+        margin-right: 100px;
+        max-width: inherit;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .carousel-slide__carousel .slick-slider {
+        width: 60%;
+    }
+}
