@@ -65,6 +65,7 @@
     position: absolute;
     top: 50%;
     margin-top: -10px;
+    filter: none;
 }
 
 .carousel-slide__carousel .slick-arrow.slick-disabled {
@@ -74,15 +75,15 @@
 }
 
 .carousel-slide__carousel .slick-prev {
-    left: -25px;
+    left: -24px;
     right: auto;
-    transform: translateX(-50%) rotate(90deg);
+    transform: translateX(-50%) rotate(180deg);
 }
 
 .carousel-slide__carousel .slick-next {
-    right: -86px;
+    right: -51px;
     left: auto;
-    transform: translateX(-50%) rotate(270deg);
+    transform: translateX(-50%) rotate(0deg);
 }
 
 .carousel-slide__title {
@@ -99,7 +100,7 @@
 
 .carousel-slide__content .slick-slide {
     margin: 0 5px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.75);
     border-radius: 20px 0;
 }
 
@@ -150,7 +151,6 @@
         margin-right: 150px;
     }
     .carousel-slide__carousel .slick-slider {
-        /* width: 72%; */
         width: 780px;
     }
 }
