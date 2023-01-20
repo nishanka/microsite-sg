@@ -83,7 +83,6 @@ const CarouselSlide = ({ title, topLinkUrl, topLinkText }) => {
             </div>
         </div>
     );
-
 }
 
 export default CarouselSlide;
